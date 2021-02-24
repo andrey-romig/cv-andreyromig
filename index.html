@@ -4,42 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV - Andrey Alan Romig</title>
-        <style>
-            body {
-                font-family: 'Times New Roman', Times, serif;
-            }
-            #indice {
-                display: inline-flex;
-                margin-bottom: 5px;
-                margin-top: 5px;
-            }
-            #indice p {
-                border-style: solid;
-                border-left: 0px;
-                padding: 5px;
-                margin-bottom: 5px;
-                margin-top: 5px;
-            }
-            #indice a {
-                text-decoration: none;
-            }
-            #dados h1 {
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     </head>
-    <body>
-        <div id="indice">
-            <p id="info"><a href="#dados">Informações pessoais</a></p>
-            <p><a href="#objetivo">Objetivos</a></p>
-            <p><a href="#formacao-cursos">Formação e Cursos</a></p>
-            <p><a href="#idioma">Idiomas</a> </p>  
-            <p><a href="mailto:romig.andrey2017@gmail.com">Envie um e-mail</a></p>
-        </div>
-        <div id="dados"> <!--Seção para Informações pessoais-->
-            <h1><b>Andrey Alan Romig</b></h1>
-            <table width=60%>
+    <body style="background-color: rgb(245, 245, 245);"></body>
+        <div id="dados" class="container"> <!--Seção para Informações pessoais-->
+            <h1 style="text-align: center;"><b>Andrey Alan Romig</b></h1>
+            <table class="table">
                 <tr>
                     <td>Cidade: Pomerode - SC</td>
                     <td>Brasileiro</td>
@@ -53,42 +23,53 @@
                     <td>19 Anos</td>
                 </tr>
                 <tr>
-                    <td>Contato: (47) 99142-2829</td>
+                    <td colspan="2">Contato: (47) 99142-2829</td>
                 </tr>
                 <tr>
-                    <td>E-mail: romig.andrey2017@gmail.com</td>
-                    <td>LinkedIn: --</td>
+                    <td colspan="2">E-mail: romig.andrey2017@gmail.com</td>
+                </tr>
+                <tr>
+                    <td colspan="2">LinkedIn: <a href="https://www.linkedin.com/in/andrey-romig-7b6439202/">https://www.linkedin.com/in/andrey-romig-7b6439202/</a></td>
                 </tr>
             </table>
         </div>
-        <div id="objetivo"> <!--Seção para objetivos-->
-            <br>
+        <div id="objetivo" class="container"> <!--Seção para objetivos-->
             <h3>Objetivo</h3>
-            <p>Ingressar e obter experiência na área de desenvolvimento ou análise de sistemas utilizando a linguagem Java ou Delphi.</p>
+            <ul class="list-group">
+                <li class="list-group-item">Ingressar e obter experiência na área de desenvolvimento ou análise de sistemas
+                    utilizando a linguagem Java ou Web.</li>
+            </ul>
         </div>
-        <div id="formacao-cursos"> <!--Seção para cursos e formação-->
-            <br>
+        <div id="formacao" class="container"> <!--Seção para cursos e formação-->
             <h3>Formação Escolar</h3>
-            <ul>
-                <li>Ensino médio completo – E.E.B. José Bonifácio - 2018</li>
+            <ul class="list-group">
+                <li class="list-group-item">Ensino médio completo – E.E.B. José Bonifácio - 2018</li>
             </ul>
-            <br>
-            <br>
+        </div>  
+        <div id="exp" class="container">
+            <h3>Experiência Profissional</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Abr/2018 - Atualmente<br>Sócio administrador - Romig Facção de Plásticos LTDA - Pomerode</li>
+            </ul>
+        </div> 
+        <div id="cursos" class="container">    
             <h3>Cursos</h3>
-            <ul>
-                <li>Advanced Programming (Java, Delphi, Pascal, Html e MySql) – <a href="https://www.cetelbras.com.br">Cetelbras</a> 
-                    – Pomerode – Jun/2019 – 180h <img src="assets/cetelbras logo.jpg" alt="Logo cetelbras" width="50"></li>
-                <li>Manutenção de Microcomputadores – <a href="https://www.cetelbras.com.br">Cetelbras</a> 
-                    – Pomerode – Mar/2018 – 120h <img src="assets/cetelbras logo.jpg" alt="Logo cetelbras" width="50"></li>
-                <li>Java/JavaScript  - Projeto <a href="https://www.entra21.com.br">Entra21</a>
-                     Blusoft - Blumenau - Previsão de término Fev/2021 - 480h <img src="assets/entra21 logo.png" alt="Logo Entra21" width="30"></li>
+            <ul class="list-group">
+                <li class="list-group-item">Java/JavaScript - Projeto Entra21 Blusoft - Blumenau - Previsão de término Fev/2021
+                    - 480h</li>
+                <li class="list-group-item">Advanced Programming (Java, Delphi, Pascal, Html e MySql) – Cetelbras – Pomerode
+                    – Ago/2020 – 110h</li>
+                <li class="list-group-item">Manutenção de Microcomputadores – Cetelbras – Pomerode – Jun/2019 – 80h</li>
             </ul>
         </div>
-        <br>
-        <br>
-        <div id="idioma"> <!--Seção para idioma-->
+        <div id="idioma" class="container"> <!--Seção para idioma-->
             <h3>Idioma</h3>
-            <p>Inglês - Intermediário</p>
+            <ul class="list-group">
+                <li class="list-group-item">Inglês - Intermediário</li>
+            </ul>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </body>
 </html>
